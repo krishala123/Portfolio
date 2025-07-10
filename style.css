@@ -455,13 +455,6 @@ nav ul li a {
   gap: 40px;
 }
 
-/* Responsive stacking on smaller screens */
-@media (max-width: 768px) {
-  #education .edu-list {
-    grid-template-columns: 1fr;
-  }
-}
-
 .edu-card {
   background-color: #2c2c2e;
   padding: 24px;
@@ -470,26 +463,36 @@ nav ul li a {
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .edu-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(255, 79, 129, 0.4);
 }
+
 .edu-card h4 {
   color: var(--primary-color);
   font-size: 22px;
 }
+
 .edu-meta {
   font-size: 16px;
   color: #ccc;
   margin: 8px 0;
 }
+
 .edu-desc {
   font-size: 16px;
   color: var(--color-white);
 }
+
 #education .title h2 {
   text-shadow: 0 0 10px #ff4f81, 0 0 20px #ff4f81, 0 0 30px #ff4f81;
-  color: var(--color-white);
+  color: var(--primary-color);
 }
 
-
+/* Mobile responsive layout for education */
+@media (max-width: 768px) {
+  #education .edu-list {
+    grid-template-columns: 1fr;
+  }
+}
