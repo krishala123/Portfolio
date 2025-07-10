@@ -435,3 +435,44 @@ section#footer {
 nav ul li a {
   text-shadow: 0 0 5px #ff4f81, 0 0 10px #ff4f81, 0 0 15px #ff4f81;
 }
+/* Education Section */
+#education {
+  padding: 16px 300px;
+  margin-bottom: 48px;
+}
+#education .edu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.edu-card {
+  background-color: #2c2c2e;
+  padding: 24px;
+  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 0 10px rgba(255, 79, 129, 0.3);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 79, 129, 0.4);
+}
+.edu-card h4 {
+  color: var(--primary-color);
+  font-size: 22px;
+}
+.edu-meta {
+  font-size: 16px;
+  color: #ccc;
+  margin: 8px 0;
+}
+.edu-desc {
+  font-size: 16px;
+  color: var(--color-white);
+}
+#education .title h2 {
+  text-shadow: 0 0 10px #ff4f81, 0 0 20px #ff4f81, 0 0 30px #ff4f81;
+  color: var(--color-white);
+}
+
+
