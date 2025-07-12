@@ -17,13 +17,13 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger">
-        <img src="hamburger.svg" alt="Menu" />
+        <img src="./icons/hamburger.svg" alt="Menu" />
       </div>
     </nav>
 
     <div class="sidebar">
       <div class="sidebar-menu">
-        <img src="close.svg" alt="Close" class="close-btn" />
+        <img src="./icons/close.svg" alt="Close" class="close-btn" />
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -58,6 +58,7 @@
       </div>
       <div class="project-list">
         <!-- Repeat this block for each project -->
+        <!-- Existing Project -->
         <!-- Existing Project -->
         <div class="project-card">
           <div class="project-image">
@@ -122,24 +123,7 @@
         </div>
       </div>
     </section>
-
-    <section id="about">
-      <div class="details">
-        <h4>About Myself</h4>
-        <p>
-          I am a passionate learner who enjoys exploring web development. I
-          love creating user-friendly websites and I am always excited to learn
-          new tools and technologies.
-        </p>
-        <div class="social-links">
-          <a href="#"><img src="twitter.png" alt="Twitter" /></a>
-          <a href="#"><img src="insta.png" alt="Instagram" /></a>
-          <a href="#"><img src="fb.png" alt="Facebook" /></a>
-        </div>
-      </div>
-      <img src="image2.jpg" alt="Krishala" class="about-img" />
-    </section>
-<section id="education">
+    <section id="education">
       <div class="title">
         <h2>Education</h2>
         <p class="sub-title">My academic background and qualifications.</p>
@@ -157,34 +141,45 @@
         
       </div>
     </section>
-    <section id="contact">
-      <div class="title">
-        <h2>Contact Me</h2>
-        <p class="sub-title">Get in touch via the form below.</p>
+
+    <section id="about">
+      <div class="details">
+        <h4>About Myself</h4>
+        <p>
+          I am a passionate learner who enjoys exploring web development. I love
+          creating user-friendly websites and am always excited to learn new
+          tools and technologies.
+        </p>
+        <div class="social-links">
+          <a href="#"><img src="./icons/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="./icons/insta.png" alt="Instagram" /></a>
+          <a href="#"><img src="./icons/fb.png" alt="Facebook" /></a>
+        </div>
       </div>
-      <form>
-        <div class="inputs">
-          <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="Enter your name" />
-        </div>
-
-        <div class="inputs">
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="Enter your email" />
-        </div>
-
-        <div class="inputs">
-          <label for="message">Message:</label>
-          <textarea
-            id="message"
-            rows="5"
-            placeholder="Enter your message"
-          ></textarea>
-        </div>
-
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
+      <img src="image2.jpg" alt="Krishala" class="about-img" />
     </section>
+
+   <section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <p>Get in touch via the form below.</p>
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
 
     <section id="footer">Made with ❤️ by Krishala Chaudhary</section>
 
